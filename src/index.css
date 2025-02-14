@@ -1,0 +1,61 @@
+@import 'tailwindcss';
+@font-face {
+  font-family: 'Jay';
+  src: url('/src/assets/fonts/JejuMyeongjo-Regular.ttf');
+}
+@font-face {
+  font-family: Roadrage;
+  src: url(/src/assets/fonts/RoadRage-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(/src/assets/fonts/Roboto-Thin.ttf);
+}
+@font-face {
+  font-family: RobotoR;
+  src: url(/src/assets/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Alatsi;
+  src: url(/src/assets/fonts/Alatsi-Regular.ttf);
+}
+body{
+  font-family: 'Jay';
+}
+.tech{
+  font-family: Roadrage;
+}
+ .ticketType, .ready{
+  font-family: Roboto;
+}
+.price, .select, .eventD, .stage2{
+  font-family: RobotoR;
+}
+.lastpage{
+  font-family: Alatsi;
+}
+@media print {
+  body * {
+    visibility: hidden; /* Hide everything by default */
+  }
+  
+  #printable-ticket, #printable-ticket * {
+    visibility: visible; /* Make only the ticket visible */
+  }
+
+  #printable-ticket {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  #bindDiv{
+    position: absolute;
+    right: 230px;
+    bottom: 85px;
+      
+  }
+}
+
+
