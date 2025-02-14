@@ -3,6 +3,9 @@ import { ButtonSolid } from "./Button";
 import CustomDropdown from "./Dropdown";
 import { TicketType } from "./TicketType";
 import { CloudDownload, Mail } from "lucide-react";
+import ticketBg from '/src/assets/images/bg (1).png'
+import skeletonTicket from '/src/assets/images/Skelethon (1).png'
+import barCode from '/src/assets/images/Bar Code.png'
 import { saveFormData, getFormData } from "./indexedDB";
 
 
@@ -393,11 +396,11 @@ const TicketSelection = ({ currentStep, setCurrentStep }) => {
                   id="printable-ticket"
                 >
                   <img
-                    src="/src/assets/bg (1).png"
+                    src={ticketBg}
                     className="w-[300px] h-[600px]"
                   />
                   <img
-                    src="/src/assets/Skelethon (1).png"
+                    src={skeletonTicket}
                     className="w-[260px] h-[446px] absolute top-[20px]"
                   />
                   <div>
@@ -432,7 +435,7 @@ const TicketSelection = ({ currentStep, setCurrentStep }) => {
                         </p>
                       </div>
                       <img
-                        src="/src/assets/Bar Code.png"
+                        src={barCode}
                         alt=""
                         className="mt-20 "
                       />
